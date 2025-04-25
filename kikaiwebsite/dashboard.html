@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <h1>KIKAI GIRLS HIGH SCHOOL</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="elearning.html">E-learning</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="school-details.html">History |News</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Welcome, <span id="studentName"></span>!</h2>
+  <div class="card">
+    <h3>Admission No: <span id="egAdm"></span></h3>
+    <p>🎓 <strong>Fee Payment:</strong> KES 0.00 (To be updated)</p>
+    <p>📊 <strong>Exam Performance:</strong> No data</p>
+    <p>📍 <strong>Residence:</strong> Tuuti Area</p>
+    <p>📞 <strong>Parent Contact:</strong> Not set</p>
+  </div>
+
+  <footer>
+    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById("regName").textContent = localStorage.getItem("regName");
+    document.getElementById("egAdm").textContent = localStorage.getItem("egAdm");
+  </script>
+</body>
+</html>
