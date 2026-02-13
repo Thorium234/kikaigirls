@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - KIKAI GIRLS HIGH SCHOOL</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>Contact KIKAI GIRLS HIGH SCHOOL</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="#" onclick="toggleChat()">Help 💬</a></li>
+        <li><a href="#" onclick="event.preventDefault(); toggleChat();">Help</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Get in Touch</h2>
-    <p>📞 Phone: <a href="tel:+254723958346">+254723958346</a></p>
-    <p>📧 Email: <a href="mailto:emmanuelshitotei90@gamil.com">emmanuelshitotei90@gamil.com</a></p>
-<p>🏫 Address: P.O. Box 35-50202, Bungoma(Chwele), Kenya</p>
+  <main class="stack">
+    <section class="panel">
+      <h2>Get in Touch</h2>
+      <p>For admissions, reporting, academics, or general questions, use the official contacts below.</p>
+      <p><strong>Phone:</strong> <a href="tel:+254723958346">+254 723 958 346</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@kikaigirls.edu">info@kikaigirls.edu</a></p>
+      <p><strong>Address:</strong> P.O. Box 35-50202, Bungoma (Chwele), Kenya</p>
+    </section>
+
+    <section class="quick-links" aria-label="Contact departments">
+      <article class="panel">
+        <h3>Admissions Office</h3>
+        <p>Monday - Friday: 8:00 AM to 4:30 PM</p>
+      </article>
+      <article class="panel">
+        <h3>ICT Support Desk</h3>
+        <p>Help with portal login, account setup, and digital resources.</p>
+      </article>
+    </section>
   </main>
 
-  <div id="chatbot" class="chatbox hidden">
-    <p>Need help? I’m here to assist you!</p>
-    <input type="text" placeholder="Type a question...">
+  <div id="chatbot" class="chatbox hidden" role="dialog" aria-label="School help chat">
+    <p>Need assistance? We are here to help.</p>
+    <label class="visually-hidden" for="chatInputContact">Type a question</label>
+    <input id="chatInputContact" type="text" placeholder="Type a question..." />
   </div>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
   </footer>
 

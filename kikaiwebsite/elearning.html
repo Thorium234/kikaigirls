@@ -8,9 +8,9 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>E-learning Portal</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -18,7 +18,7 @@
         <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="#" onclick="toggleChat()">Help</a></li>
+        <li><a href="#" onclick="event.preventDefault(); toggleChat();">Help</a></li>
       </ul>
     </nav>
   </header>
@@ -64,8 +64,14 @@
     </section>
   </main>
 
+  <div id="chatbot" class="chatbox hidden" role="dialog" aria-label="School help chat">
+    <p>Need help with online learning resources?</p>
+    <label class="visually-hidden" for="chatInputElearn">Ask here</label>
+    <input id="chatInputElearn" type="text" placeholder="Ask here..." />
+  </div>
+
   <footer>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
   </footer>
 

@@ -8,9 +8,9 @@
 </head>
 <body class="auth-page">
   <header>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>Student &amp; Staff Portal</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,7 +28,8 @@
       <div class="form-container">
         <h2>Student Login</h2>
         <label for="loginAdm">Admission Number</label>
-        <input type="text" id="loginAdm" placeholder="e.g. KGHS-1024" autocomplete="username" />
+        <input type="text" id="loginAdm" placeholder="e.g. KGHS-1024" autocomplete="username" aria-describedby="loginHint" />
+        <p id="loginHint" class="form-helper">Format example: KGHS-1024</p>
         <p id="formMessage" class="form-message" aria-live="polite"></p>
         <div class="form-actions">
           <button type="button" onclick="login()">Login</button>
@@ -39,7 +40,7 @@
   </main>
 
   <footer>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
   </footer>
 

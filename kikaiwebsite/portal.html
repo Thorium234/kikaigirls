@@ -1,39 +1,71 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portal - KIKAI GIRLS HIGH SCHOOL</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
-    <h1>Student & Staff Portal</h1>
-    <nav>
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
+    <h1>Student &amp; Staff Portal</h1>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="#" onclick="toggleChat()">Help 💬</a></li>
+        <li><a href="school-details.html">History | News</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <p>This page will redirect to the login system or student portal in future.</p>
-    <p>Access <a href="std-registor.html">Student Registration</a> | <a href="#">Staff registration</a></p>
-    <p>Access <a href="std-login.html">Student Login</a> | <a href="#">Staff Login</a></p>
+  <main class="stack">
+    <section class="panel">
+      <h2>Portal Access</h2>
+      <p>Welcome to the KIKAI Girls portal. Use the links below to register or log in to access student dashboard services.</p>
+      <div class="cta-row">
+        <a class="btn-link" href="std-registor.html">Student Registration</a>
+        <a class="btn-link" href="std-login.html">Student Login</a>
+      </div>
+      <p class="small-text">Staff login is currently under development for a future static release.</p>
+    </section>
+
+    <section class="quick-links" aria-label="Portal guidance">
+      <article class="panel">
+        <span class="badge">For Students</span>
+        <h3>What You Can Access</h3>
+        <ul>
+          <li>Personal profile and stream details</li>
+          <li>Academic notices and dashboard summary</li>
+          <li>Quick links to e-learning and library resources</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <span class="badge">For Parents</span>
+        <h3>How to Use This Portal</h3>
+        <ul>
+          <li>Support your child during registration and login</li>
+          <li>Review school notices and timetable updates</li>
+          <li>Use contact details for help with account access</li>
+        </ul>
+      </article>
+    </section>
   </main>
 
+  <div id="chatbot" class="chatbox hidden" role="dialog" aria-label="School help chat">
+    <p>Need help using the portal?</p>
+    <label class="visually-hidden" for="chatInputPortal">Type your question</label>
+    <input id="chatInputPortal" type="text" placeholder="Type your question..." />
+  </div>
+
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
-   
   </footer>
 
   <script src="js/script.js"></script>

@@ -1,51 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KIKAI GIRLS HIGH SCHOOL</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>KIKAI GIRLS HIGH SCHOOL</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="school-details.html">History |News</a></li>
+        <li><a href="school-details.html">History | News</a></li>
       </ul>
     </nav>
   </header>
 
-  <main >
-    <section class="hero">
+  <main class="stack">
+    <section class="hero panel">
       <div class="image-container">
-        <img class="school-phot" src="images/logo.jpg" alt="Gate" srcset="">
+        <img class="school-phot" src="images/logo.jpg" alt="Kikai Girls High School emblem" loading="eager" />
       </div>
-       
-      <h2>Welcome to KIKAI GIRLS HIGH SCHOOL</h2>
+      <h2>Welcome to KIKAI Girls High School</h2>
+      <p class="hero-subtitle">A supportive learning environment for students, parents, and staff focused on academic excellence, discipline, and leadership.</p>
+      <div class="cta-row">
+        <a class="btn-link" href="portal.html">Access Student Portal</a>
+        <a class="btn-link secondary" href="contact.html">Contact the School</a>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Important school information">
+      <article class="panel">
+        <span class="badge">Announcements</span>
+        <h3>Latest School Notices</h3>
+        <ul>
+          <li>Term 1 opening date: Monday, 13 January 2026.</li>
+          <li>Parent meeting: Friday, 7 February 2026 at 10:00 AM.</li>
+          <li>Inter-school games trials: Wednesday afternoons.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <span class="badge">Departments</span>
+        <h3>Academic Departments</h3>
+        <ul>
+          <li>Sciences: Biology, Chemistry, Physics</li>
+          <li>Languages: English, Kiswahili, Literature</li>
+          <li>Humanities: History, Geography, CRE</li>
+          <li>Mathematics and Business Studies</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <span class="badge">Staff</span>
+        <h3>Key Staff Contacts</h3>
+        <ul>
+          <li>Principal: Mrs. A. Naliaka</li>
+          <li>Deputy Principal: Mr. J. Wanjala</li>
+          <li>Guidance and Counseling: Ms. R. Khisa</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <span class="badge">Downloads</span>
+        <h3>School Documents</h3>
+        <ul>
+          <li><a href="#" aria-label="Download school rules PDF">School Rules (PDF)</a></li>
+          <li><a href="#" aria-label="Download fee structure PDF">Fee Structure (PDF)</a></li>
+          <li><a href="#" aria-label="Download academic calendar PDF">Academic Calendar (PDF)</a></li>
+        </ul>
+      </article>
     </section>
   </main>
 
-  <div id="chatbot" class="chatbox hidden">
-    <p>Hello! How can I assist you today?</p>
-    <input type="text" placeholder="Ask something...">
+  <div id="chatbot" class="chatbox hidden" role="dialog" aria-label="School help chat">
+    <p>Hello, how can we assist you today?</p>
+    <label class="visually-hidden" for="chatInputHome">Ask a question</label>
+    <input id="chatInputHome" type="text" placeholder="Ask something..." />
   </div>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL. All Rights Reserved.</p>
   </footer>
-  
+
   <script src="js/script.js"></script>
 </body>
 </html>
-
-

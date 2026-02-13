@@ -1,142 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KIKAI GIRLS HIGH SCHOOL</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History &amp; News - KIKAI GIRLS HIGH SCHOOL</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>KIKAI GIRLS HIGH SCHOOL</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="#" onclick="toggleChat()">Help 💬</a></li>
+        <li><a href="school-details.html">History | News</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    
-      <div class="image-container-sch">
-        
-        <img  src="images/staff.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we deliver knowledge and we enhance team work.
-        The society believes in our daughters. 
-      </p>  
+  <main class="stack">
+    <section class="panel">
+      <h2>School History</h2>
+      <p>KIKAI Girls High School has grown into a trusted institution for girls' education through consistent academic programs, co-curricular activities, and character development.</p>
+    </section>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/celebration.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+    <section class="resource-grid" aria-label="School news highlights">
+      <article class="resource-card">
+        <img src="images/staff.jpg" class="image-container-sch-img" alt="Teaching staff during a school event" loading="lazy" />
+        <h3>Staff Development</h3>
+        <p>Teachers participated in a professional development workshop focused on learner-centered instruction.</p>
+      </article>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/bl.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+      <article class="resource-card">
+        <img src="images/celebration.jpg" class="image-container-sch-img" alt="Students celebrating an achievement" loading="lazy" />
+        <h3>Academic Achievement</h3>
+        <p>Students were recognized for excellent internal examination performance and discipline.</p>
+      </article>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/handball.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
-      <div class="image-container-sch">
-        
-        <img  src="images/zz.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
-      <div class="image-container-sch">
-        
-        <img  src="images/wew.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+      <article class="resource-card">
+        <img src="images/handball.jpg" class="image-container-sch-img" alt="School handball team in training" loading="lazy" />
+        <h3>Sports and Talent</h3>
+        <p>The school handball team continues weekly training to prepare for county-level competitions.</p>
+      </article>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/zz.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+      <article class="resource-card">
+        <img src="images/week.jpg" class="image-container-sch-img" alt="Students participating in school week activities" loading="lazy" />
+        <h3>School Week Program</h3>
+        <p>Annual school week activities highlighted leadership, innovation, and student participation.</p>
+      </article>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/week.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+      <article class="resource-card">
+        <img src="images/vic.jpg" class="image-container-sch-img" alt="School team celebrating victory" loading="lazy" />
+        <h3>Co-curricular Success</h3>
+        <p>Our teams continue to represent the school proudly in external competitions.</p>
+      </article>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/vic.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
+      <article class="resource-card">
+        <img src="images/afr.jpg" class="image-container-sch-img" alt="Students and staff during a cultural event" loading="lazy" />
+        <h3>Culture and Community</h3>
+        <p>Community engagement and cultural events strengthen confidence, identity, and teamwork.</p>
+      </article>
+    </section>
+  </main>
 
-      <div class="image-container-sch">
-        
-        <img  src="images/rcoach.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        In the 21 <sup>st</sup> centuary
-        we strive to servive 
-        is either you make is or you watch others making it.
-      </p>  
-      
-      <div class="image-container-sch">
-        
-        <img  src="images/rteam.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        we believe victory is our portion in the 21 <sup>st</sup> centuary
-      </p>  
-
-      <div class="image-container-sch">
-        
-        <img  src="images/afr.jpg"  class="image-container-sch-img" alt="School Gate">
-      </div>
-      <p>Welcome to  <strong>KIKAI GIRLS HIGH SCHOOL</strong>
-        nothig comes on a silvery plate in the 21 <sup>st</sup> centuary.
-        nothing is imposible
-      </p>  
-        
-      
-  <div id="chatbot" class="chatbox hidden">
-    <p>Hello! How can I assist you today?</p>
-    <input type="text" placeholder="Ask something...">
+  <div id="chatbot" class="chatbox hidden" role="dialog" aria-label="School help chat">
+    <p>Hello! How can we help you today?</p>
+    <label class="visually-hidden" for="chatInputDetails">Ask here</label>
+    <input id="chatInputDetails" type="text" placeholder="Ask something..." />
   </div>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL. All Rights Reserved.</p>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
 </html>
-
-

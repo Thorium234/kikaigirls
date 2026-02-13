@@ -8,9 +8,9 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="eager" />
     <h1>KIKAI GIRLS HIGH SCHOOL</h1>
-    <nav>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,7 +24,7 @@
   </header>
 
   <main class="dashboard-main">
-    <section class="dashboard-hero">
+    <section class="dashboard-hero" aria-live="polite">
       <h2 id="dashboardGreeting">Welcome back.</h2>
       <p class="dashboard-meta">Student Name: <strong id="studentName">-</strong></p>
       <p class="dashboard-meta">Admission Number: <strong id="studentAdm">-</strong></p>
@@ -51,7 +51,7 @@
   </main>
 
   <footer>
-    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" loading="lazy" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL. All Rights Reserved.</p>
   </footer>
 
