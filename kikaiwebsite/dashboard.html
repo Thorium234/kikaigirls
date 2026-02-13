@@ -2,43 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Student Dashboard</title>
- <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard - KIKAI GIRLS HIGH SCHOOL</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
     <h1>KIKAI GIRLS HIGH SCHOOL</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
-        <li><a href="school-details.html">History |News</a></li>
+        <li><a href="school-details.html">History | News</a></li>
       </ul>
     </nav>
   </header>
-  <h2>Welcome, <span id="studentName"></span>!</h2>
-  <div class="card">
-    <h3>Admission No: <span id="egAdm"></span></h3>
-    <p>🎓 <strong>Fee Payment:</strong> KES 0.00 (To be updated)</p>
-    <p>📊 <strong>Exam Performance:</strong> No data</p>
-    <p>📍 <strong>Residence:</strong> Tuuti Area</p>
-    <p>📞 <strong>Parent Contact:</strong> Not set</p>
-  </div>
+
+  <main class="dashboard-main">
+    <section class="dashboard-hero">
+      <h2 id="dashboardGreeting">Welcome back.</h2>
+      <p class="dashboard-meta">Student Name: <strong id="studentName">-</strong></p>
+      <p class="dashboard-meta">Admission Number: <strong id="studentAdm">-</strong></p>
+      <p class="dashboard-meta">Stream: <strong id="studentStream">-</strong></p>
+      <button type="button" class="logout-btn" onclick="logout()">Logout</button>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="dashboard-card">
+        <h3>Academic Overview</h3>
+        <div class="metric"><span>Current Term</span><strong>Term 1, 2026</strong></div>
+        <div class="metric"><span>Fee Balance</span><strong>KES 0.00</strong></div>
+        <div class="metric"><span>Exam Performance</span><strong>Pending update</strong></div>
+        <div class="metric"><span>Class Teacher</span><strong>Mrs. A. Naliaka</strong></div>
+      </article>
+
+      <article class="dashboard-card">
+        <h3>Notices</h3>
+        <p><strong>Orientation:</strong> New term briefing scheduled for Monday, 8:00 AM in the assembly hall.</p>
+        <p><strong>Library:</strong> New science revision papers are available under Library resources.</p>
+        <p><strong>Support:</strong> For account issues, visit the ICT office during break time.</p>
+      </article>
+    </section>
+  </main>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL. All Rights Reserved.</p>
   </footer>
-  
+
   <script src="js/script.js"></script>
-  <script>
-    document.getElementById("regName").textContent = localStorage.getItem("regName");
-    document.getElementById("egAdm").textContent = localStorage.getItem("egAdm");
-  </script>
 </body>
 </html>

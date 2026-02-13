@@ -1,24 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Student & Staff Portal</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration - KIKAI GIRLS HIGH SCHOOL</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
- <header>
-  <img src="images/logo.jpg" alt="logo"  class="logo"> 
-    <h1>Student & Staff Portal</h1>
+<body class="auth-page">
+  <header>
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <h1>Student &amp; Staff Portal</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
       </ul>
@@ -26,24 +23,35 @@
   </header>
 
   <main>
-    <div class="form-container">
-      <h2>Student Registration</h2>
-      <input type="text" id="regName" placeholder="Full Name">
-      <input type="text" id="regAdm" placeholder="Admission Number">
-      <input type="text" id="regStream" placeholder="Stream">
-      <button onclick="register()">Register</button>
-    </div>
+    <section class="auth-shell">
+      <p class="auth-note">Register once to create your student portal profile.</p>
+      <div class="form-container">
+        <h2>Student Registration</h2>
 
+        <label for="regName">Full Name</label>
+        <input type="text" id="regName" placeholder="e.g. Jane Atieno" autocomplete="name" />
+
+        <label for="regAdm">Admission Number</label>
+        <input type="text" id="regAdm" placeholder="e.g. KGHS-1024" autocomplete="off" />
+
+        <label for="regStream">Stream</label>
+        <input type="text" id="regStream" placeholder="e.g. Form 3 East" autocomplete="organization-title" />
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+        <div class="form-actions">
+          <button type="button" onclick="register()">Register</button>
+          <a href="std-login.html">Already registered? Login</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
-   
   </footer>
- 
-  
+
   <script src="js/script.js"></script>
 </body>
 </html>
-

@@ -1,24 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Student & Staff Portal</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Login - KIKAI GIRLS HIGH SCHOOL</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
- <header>
-  <img src="images/logo.jpg" alt="logo"  class="logo"> 
-    <h1>Student & Staff Portal</h1>
+<body class="auth-page">
+  <header>
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
+    <h1>Student &amp; Staff Portal</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="portal.html">Student & Staff Portal</a></li>
+        <li><a href="portal.html">Student &amp; Staff Portal</a></li>
         <li><a href="elearning.html">E-learning</a></li>
         <li><a href="library.html">Library</a></li>
       </ul>
@@ -26,20 +23,26 @@
   </header>
 
   <main>
-    <div class="form-container">
-      <h2>Login</h2>
-      <input type="text" id="loginAdm" placeholder="Admission Number">
-      <button onclick="login()">Login</button>
-    </div>
+    <section class="auth-shell">
+      <p class="auth-note">Use your admission number to access the student dashboard.</p>
+      <div class="form-container">
+        <h2>Student Login</h2>
+        <label for="loginAdm">Admission Number</label>
+        <input type="text" id="loginAdm" placeholder="e.g. KGHS-1024" autocomplete="username" />
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+        <div class="form-actions">
+          <button type="button" onclick="login()">Login</button>
+          <a href="std-registor.html">Create a student account</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <img src="images/logo.jpg" alt="logo"  class="logo"> 
+    <img src="images/logo.jpg" alt="Kikai Girls High School logo" class="logo" />
     <p>&copy; 2025 KIKAI GIRLS HIGH SCHOOL</p>
-    
   </footer>
- 
+
   <script src="js/script.js"></script>
 </body>
 </html>
-
